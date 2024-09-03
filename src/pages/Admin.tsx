@@ -6,7 +6,7 @@ import AuthenticationError from '../callbacks/AuthenticationError'
 import SessionLost from '../callbacks/SessionLost'
 import UserInfo from '../UserInfo'
 
-const Home = () => {
+const Admin = () => {
     // important hooks
     // const { accessTokenPayload } = useOidcAccessToken()   // this contains the user info in raw json format
     // const userInfo = accessTokenPayload as UserInfo       // 
@@ -16,12 +16,12 @@ const Home = () => {
     return (
         
         <div>
-            <h1 className="display-3">Welcome to InfoSys</h1>
-            <p className="lead">This is the message currently running on InfoSys:</p>
+            <h1 className="display-3">testing stuff</h1>
+            <p className="lead"></p>
             
             
         </div>
     )
 }
 
-export default Home
+export default Admin
