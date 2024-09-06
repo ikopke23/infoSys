@@ -9,7 +9,6 @@ import {
 } from 'reactstrap'
 import { NavLink } from 'react-router-dom'
 import Profile from './Profile'
-import ThemeToggle from './ThemeToggle'
 
 const NavBar: React.FunctionComponent = () => {
     const [isOpen, setIsOpen] = React.useState<boolean>(false)
@@ -22,9 +21,7 @@ const NavBar: React.FunctionComponent = () => {
         <div>
             <Navbar color='primary' dark expand='lg' fixed='top'>
                 <Container>
-                    <NavLink to='/' className={'navbar-brand'}>
-                        CSH React Boilerplate
-                    </NavLink>
+                    <NavLink to='/' className={'navbar-brand'}>InfoSys</NavLink>
                     <NavbarToggler onClick={toggle} />
                     <Collapse isOpen={isOpen} navbar>
                         <Nav navbar>
@@ -36,11 +33,16 @@ const NavBar: React.FunctionComponent = () => {
                             {
                                 // to add stuff to the navbar, add a NavItem tag with a NavLink to the route
                             }
+                            <NavItem>
+                                <NavLink to='/submission' className = 'nav-link'>Submit a Message!</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink to='/queued-messages' className = 'nav-link'>Queued Messages</NavLink>
+                            </NavItem>
                         </Nav>
                         <Nav navbar className='ml-auto'>
                             <Profile />
                         </Nav>
-                        <ThemeToggle/>
                     </Collapse>
                 </Container>
             </Navbar>
