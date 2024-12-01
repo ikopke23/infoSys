@@ -21,7 +21,7 @@
     "react-router-dom": "^6.8.1",
     "react-scripts": "^5.0.1",
     "reactstrap": "^9.1.4",
-    "typescript": "^4"
+    "typescript": "^5"
   },
   "scripts": {
     "start": "react-app-rewired start",
